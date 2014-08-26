@@ -1,0 +1,12 @@
+
+<%= render 'shared/content_title', title: "All Lessons" %>
+
+<% @lessons.each do |lesson| %>
+
+    <%= lesson.title %><br>
+    <%= lesson.description %><br>
+    <%= lesson.video_url %><br>
+    Taught By: <%= lesson.user.username %><br>
+    <%= lesson.created_at %><br>
+
+<% end %>
